@@ -131,12 +131,16 @@
     <ClInclude Include="Kalkulator_Lengkap_1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Konversi_Jarak1.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Kalkulator_Lengkap.cpp" />
+    <ClCompile Include="Navigate.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -157,6 +161,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Kalkulator_Lengkap_1.resx">
       <DependentUpon>Kalkulator_Lengkap_1.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Konversi_Jarak1.resx">
+      <DependentUpon>Konversi_Jarak1.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

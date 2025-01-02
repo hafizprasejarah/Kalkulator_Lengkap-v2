@@ -155,9 +155,11 @@ private: System::Windows::Forms::Button^ akarBtn;
     private: System::Windows::Forms::Button^ btn9;
     private: System::Windows::Forms::FlowLayoutPanel^ menuContainer;
     private: System::Windows::Forms::Panel^ panel4;
-    private: System::Windows::Forms::Button^ button2;
+private: System::Windows::Forms::Button^ menuKalkulator;
+
     private: System::Windows::Forms::Panel^ panel3;
-    private: System::Windows::Forms::Button^ button1;
+private: System::Windows::Forms::Button^ menuKonversi;
+
     private: System::Windows::Forms::Panel^ panel1;
 
 
@@ -210,9 +212,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btn9 = (gcnew System::Windows::Forms::Button());
             this->menuContainer = (gcnew System::Windows::Forms::FlowLayoutPanel());
             this->panel4 = (gcnew System::Windows::Forms::Panel());
-            this->button2 = (gcnew System::Windows::Forms::Button());
+            this->menuKalkulator = (gcnew System::Windows::Forms::Button());
             this->panel3 = (gcnew System::Windows::Forms::Panel());
-            this->button1 = (gcnew System::Windows::Forms::Button());
+            this->menuKonversi = (gcnew System::Windows::Forms::Button());
             this->panel1 = (gcnew System::Windows::Forms::Panel());
             this->panel2->SuspendLayout();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
@@ -275,10 +277,10 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->displayBox->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->displayBox->ForeColor = System::Drawing::Color::White;
-            this->displayBox->Location = System::Drawing::Point(13, 85);
+            this->displayBox->Location = System::Drawing::Point(10, 100);
             this->displayBox->Name = L"displayBox";
             this->displayBox->ReadOnly = true;
-            this->displayBox->Size = System::Drawing::Size(782, 32);
+            this->displayBox->Size = System::Drawing::Size(788, 32);
             this->displayBox->TabIndex = 0;
             this->displayBox->TextAlign = System::Windows::Forms::HorizontalAlignment::Right;
             // 
@@ -327,7 +329,7 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->tableLayoutPanel1->Controls->Add(this->btnDivide, 3, 3);
             this->tableLayoutPanel1->Controls->Add(this->btn9, 2, 0);
             this->tableLayoutPanel1->GrowStyle = System::Windows::Forms::TableLayoutPanelGrowStyle::FixedSize;
-            this->tableLayoutPanel1->Location = System::Drawing::Point(10, 184);
+            this->tableLayoutPanel1->Location = System::Drawing::Point(10, 239);
             this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
             this->tableLayoutPanel1->RightToLeft = System::Windows::Forms::RightToLeft::No;
             this->tableLayoutPanel1->RowCount = 4;
@@ -336,7 +338,7 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 25)));
             this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 25)));
             this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 20)));
-            this->tableLayoutPanel1->Size = System::Drawing::Size(788, 431);
+            this->tableLayoutPanel1->Size = System::Drawing::Size(788, 389);
             this->tableLayoutPanel1->TabIndex = 25;
             // 
             // InversBtn
@@ -354,7 +356,7 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->InversBtn->ForeColor = System::Drawing::Color::White;
             this->InversBtn->Location = System::Drawing::Point(658, 3);
             this->InversBtn->Name = L"InversBtn";
-            this->InversBtn->Size = System::Drawing::Size(127, 101);
+            this->InversBtn->Size = System::Drawing::Size(127, 91);
             this->InversBtn->TabIndex = 21;
             this->InversBtn->Text = L"Inv";
             this->InversBtn->UseVisualStyleBackColor = false;
@@ -372,9 +374,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->PointButton->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->PointButton->ForeColor = System::Drawing::Color::White;
-            this->PointButton->Location = System::Drawing::Point(134, 324);
+            this->PointButton->Location = System::Drawing::Point(134, 294);
             this->PointButton->Name = L"PointButton";
-            this->PointButton->Size = System::Drawing::Size(125, 104);
+            this->PointButton->Size = System::Drawing::Size(125, 92);
             this->PointButton->TabIndex = 24;
             this->PointButton->Text = L",";
             this->PointButton->UseVisualStyleBackColor = false;
@@ -392,9 +394,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btn0->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn0->ForeColor = System::Drawing::Color::White;
-            this->btn0->Location = System::Drawing::Point(3, 324);
+            this->btn0->Location = System::Drawing::Point(3, 294);
             this->btn0->Name = L"btn0";
-            this->btn0->Size = System::Drawing::Size(125, 104);
+            this->btn0->Size = System::Drawing::Size(125, 92);
             this->btn0->TabIndex = 1;
             this->btn0->Text = L"0";
             this->btn0->UseVisualStyleBackColor = false;
@@ -412,9 +414,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->percentBtn->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->percentBtn->ForeColor = System::Drawing::Color::White;
-            this->percentBtn->Location = System::Drawing::Point(658, 110);
+            this->percentBtn->Location = System::Drawing::Point(658, 100);
             this->percentBtn->Name = L"percentBtn";
-            this->percentBtn->Size = System::Drawing::Size(127, 101);
+            this->percentBtn->Size = System::Drawing::Size(127, 91);
             this->percentBtn->TabIndex = 22;
             this->percentBtn->Text = L"%";
             this->percentBtn->UseVisualStyleBackColor = false;
@@ -432,9 +434,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btn1->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn1->ForeColor = System::Drawing::Color::White;
-            this->btn1->Location = System::Drawing::Point(3, 217);
+            this->btn1->Location = System::Drawing::Point(3, 197);
             this->btn1->Name = L"btn1";
-            this->btn1->Size = System::Drawing::Size(125, 101);
+            this->btn1->Size = System::Drawing::Size(125, 91);
             this->btn1->TabIndex = 2;
             this->btn1->Text = L"1";
             this->btn1->UseVisualStyleBackColor = false;
@@ -452,9 +454,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->pangkatBtn->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->pangkatBtn->ForeColor = System::Drawing::Color::White;
-            this->pangkatBtn->Location = System::Drawing::Point(658, 217);
+            this->pangkatBtn->Location = System::Drawing::Point(658, 197);
             this->pangkatBtn->Name = L"pangkatBtn";
-            this->pangkatBtn->Size = System::Drawing::Size(127, 101);
+            this->pangkatBtn->Size = System::Drawing::Size(127, 91);
             this->pangkatBtn->TabIndex = 23;
             this->pangkatBtn->Text = L"^";
             this->pangkatBtn->UseVisualStyleBackColor = false;
@@ -472,9 +474,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btn4->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn4->ForeColor = System::Drawing::Color::White;
-            this->btn4->Location = System::Drawing::Point(3, 110);
+            this->btn4->Location = System::Drawing::Point(3, 100);
             this->btn4->Name = L"btn4";
-            this->btn4->Size = System::Drawing::Size(125, 101);
+            this->btn4->Size = System::Drawing::Size(125, 91);
             this->btn4->TabIndex = 5;
             this->btn4->Text = L"4";
             this->btn4->UseVisualStyleBackColor = false;
@@ -492,9 +494,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->TanBtn->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->TanBtn->ForeColor = System::Drawing::Color::White;
-            this->TanBtn->Location = System::Drawing::Point(527, 217);
+            this->TanBtn->Location = System::Drawing::Point(527, 197);
             this->TanBtn->Name = L"TanBtn";
-            this->TanBtn->Size = System::Drawing::Size(125, 101);
+            this->TanBtn->Size = System::Drawing::Size(125, 91);
             this->TanBtn->TabIndex = 19;
             this->TanBtn->Text = L"Tan";
             this->TanBtn->UseVisualStyleBackColor = false;
@@ -514,7 +516,7 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btn7->ForeColor = System::Drawing::Color::White;
             this->btn7->Location = System::Drawing::Point(3, 3);
             this->btn7->Name = L"btn7";
-            this->btn7->Size = System::Drawing::Size(125, 101);
+            this->btn7->Size = System::Drawing::Size(125, 91);
             this->btn7->TabIndex = 8;
             this->btn7->Text = L"7";
             this->btn7->UseVisualStyleBackColor = false;
@@ -532,9 +534,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btnClear->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnClear->ForeColor = System::Drawing::Color::White;
-            this->btnClear->Location = System::Drawing::Point(658, 324);
+            this->btnClear->Location = System::Drawing::Point(658, 294);
             this->btnClear->Name = L"btnClear";
-            this->btnClear->Size = System::Drawing::Size(127, 104);
+            this->btnClear->Size = System::Drawing::Size(127, 92);
             this->btnClear->TabIndex = 16;
             this->btnClear->Text = L"C";
             this->btnClear->UseVisualStyleBackColor = false;
@@ -552,9 +554,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btn2->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn2->ForeColor = System::Drawing::Color::White;
-            this->btn2->Location = System::Drawing::Point(134, 217);
+            this->btn2->Location = System::Drawing::Point(134, 197);
             this->btn2->Name = L"btn2";
-            this->btn2->Size = System::Drawing::Size(125, 101);
+            this->btn2->Size = System::Drawing::Size(125, 91);
             this->btn2->TabIndex = 3;
             this->btn2->Text = L"2";
             this->btn2->UseVisualStyleBackColor = false;
@@ -572,9 +574,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->CosBtn->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->CosBtn->ForeColor = System::Drawing::Color::White;
-            this->CosBtn->Location = System::Drawing::Point(527, 110);
+            this->CosBtn->Location = System::Drawing::Point(527, 100);
             this->CosBtn->Name = L"CosBtn";
-            this->CosBtn->Size = System::Drawing::Size(125, 101);
+            this->CosBtn->Size = System::Drawing::Size(125, 91);
             this->CosBtn->TabIndex = 18;
             this->CosBtn->Text = L"Cos";
             this->CosBtn->UseVisualStyleBackColor = false;
@@ -592,9 +594,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btn3->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn3->ForeColor = System::Drawing::Color::White;
-            this->btn3->Location = System::Drawing::Point(265, 217);
+            this->btn3->Location = System::Drawing::Point(265, 197);
             this->btn3->Name = L"btn3";
-            this->btn3->Size = System::Drawing::Size(125, 101);
+            this->btn3->Size = System::Drawing::Size(125, 91);
             this->btn3->TabIndex = 4;
             this->btn3->Text = L"3";
             this->btn3->UseVisualStyleBackColor = false;
@@ -612,9 +614,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btn5->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn5->ForeColor = System::Drawing::Color::White;
-            this->btn5->Location = System::Drawing::Point(134, 110);
+            this->btn5->Location = System::Drawing::Point(134, 100);
             this->btn5->Name = L"btn5";
-            this->btn5->Size = System::Drawing::Size(125, 101);
+            this->btn5->Size = System::Drawing::Size(125, 91);
             this->btn5->TabIndex = 6;
             this->btn5->Text = L"5";
             this->btn5->UseVisualStyleBackColor = false;
@@ -634,7 +636,7 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->SinBtn->ForeColor = System::Drawing::Color::White;
             this->SinBtn->Location = System::Drawing::Point(527, 3);
             this->SinBtn->Name = L"SinBtn";
-            this->SinBtn->Size = System::Drawing::Size(125, 101);
+            this->SinBtn->Size = System::Drawing::Size(125, 91);
             this->SinBtn->TabIndex = 17;
             this->SinBtn->Text = L"Sin";
             this->SinBtn->UseVisualStyleBackColor = false;
@@ -652,9 +654,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->akarBtn->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->akarBtn->ForeColor = System::Drawing::Color::White;
-            this->akarBtn->Location = System::Drawing::Point(527, 324);
+            this->akarBtn->Location = System::Drawing::Point(527, 294);
             this->akarBtn->Name = L"akarBtn";
-            this->akarBtn->Size = System::Drawing::Size(125, 104);
+            this->akarBtn->Size = System::Drawing::Size(125, 92);
             this->akarBtn->TabIndex = 20;
             this->akarBtn->Text = L"√";
             this->akarBtn->UseVisualStyleBackColor = false;
@@ -674,7 +676,7 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btn8->ForeColor = System::Drawing::Color::White;
             this->btn8->Location = System::Drawing::Point(134, 3);
             this->btn8->Name = L"btn8";
-            this->btn8->Size = System::Drawing::Size(125, 101);
+            this->btn8->Size = System::Drawing::Size(125, 91);
             this->btn8->TabIndex = 9;
             this->btn8->Text = L"8";
             this->btn8->UseVisualStyleBackColor = false;
@@ -694,7 +696,7 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btnPlus->ForeColor = System::Drawing::Color::White;
             this->btnPlus->Location = System::Drawing::Point(396, 3);
             this->btnPlus->Name = L"btnPlus";
-            this->btnPlus->Size = System::Drawing::Size(125, 101);
+            this->btnPlus->Size = System::Drawing::Size(125, 91);
             this->btnPlus->TabIndex = 11;
             this->btnPlus->Text = L"+";
             this->btnPlus->UseVisualStyleBackColor = false;
@@ -712,9 +714,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btnEqual->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnEqual->ForeColor = System::Drawing::Color::White;
-            this->btnEqual->Location = System::Drawing::Point(265, 324);
+            this->btnEqual->Location = System::Drawing::Point(265, 294);
             this->btnEqual->Name = L"btnEqual";
-            this->btnEqual->Size = System::Drawing::Size(125, 104);
+            this->btnEqual->Size = System::Drawing::Size(125, 92);
             this->btnEqual->TabIndex = 15;
             this->btnEqual->Text = L"=";
             this->btnEqual->UseVisualStyleBackColor = false;
@@ -732,9 +734,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btn6->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btn6->ForeColor = System::Drawing::Color::White;
-            this->btn6->Location = System::Drawing::Point(265, 110);
+            this->btn6->Location = System::Drawing::Point(265, 100);
             this->btn6->Name = L"btn6";
-            this->btn6->Size = System::Drawing::Size(125, 101);
+            this->btn6->Size = System::Drawing::Size(125, 91);
             this->btn6->TabIndex = 7;
             this->btn6->Text = L"6";
             this->btn6->UseVisualStyleBackColor = false;
@@ -752,9 +754,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btnMinus->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnMinus->ForeColor = System::Drawing::Color::White;
-            this->btnMinus->Location = System::Drawing::Point(396, 110);
+            this->btnMinus->Location = System::Drawing::Point(396, 100);
             this->btnMinus->Name = L"btnMinus";
-            this->btnMinus->Size = System::Drawing::Size(125, 101);
+            this->btnMinus->Size = System::Drawing::Size(125, 91);
             this->btnMinus->TabIndex = 12;
             this->btnMinus->Text = L"-";
             this->btnMinus->UseVisualStyleBackColor = false;
@@ -772,9 +774,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btnMultiply->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnMultiply->ForeColor = System::Drawing::Color::White;
-            this->btnMultiply->Location = System::Drawing::Point(396, 217);
+            this->btnMultiply->Location = System::Drawing::Point(396, 197);
             this->btnMultiply->Name = L"btnMultiply";
-            this->btnMultiply->Size = System::Drawing::Size(125, 101);
+            this->btnMultiply->Size = System::Drawing::Size(125, 91);
             this->btnMultiply->TabIndex = 13;
             this->btnMultiply->Text = L"*";
             this->btnMultiply->UseVisualStyleBackColor = false;
@@ -792,9 +794,9 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btnDivide->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei", 8, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->btnDivide->ForeColor = System::Drawing::Color::White;
-            this->btnDivide->Location = System::Drawing::Point(396, 324);
+            this->btnDivide->Location = System::Drawing::Point(396, 294);
             this->btnDivide->Name = L"btnDivide";
-            this->btnDivide->Size = System::Drawing::Size(125, 104);
+            this->btnDivide->Size = System::Drawing::Size(125, 92);
             this->btnDivide->TabIndex = 14;
             this->btnDivide->Text = L"/";
             this->btnDivide->UseVisualStyleBackColor = false;
@@ -814,7 +816,7 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->btn9->ForeColor = System::Drawing::Color::White;
             this->btn9->Location = System::Drawing::Point(265, 3);
             this->btn9->Name = L"btn9";
-            this->btn9->Size = System::Drawing::Size(125, 101);
+            this->btn9->Size = System::Drawing::Size(125, 91);
             this->btn9->TabIndex = 10;
             this->btn9->Text = L"9";
             this->btn9->UseVisualStyleBackColor = false;
@@ -829,66 +831,67 @@ private: System::Windows::Forms::Button^ akarBtn;
             this->menuContainer->Dock = System::Windows::Forms::DockStyle::Left;
             this->menuContainer->Location = System::Drawing::Point(0, 43);
             this->menuContainer->Name = L"menuContainer";
-            this->menuContainer->Size = System::Drawing::Size(286, 595);
+            this->menuContainer->Size = System::Drawing::Size(0, 595);
             this->menuContainer->TabIndex = 29;
             // 
             // panel4
             // 
             this->panel4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->panel4->Controls->Add(this->button2);
+            this->panel4->Controls->Add(this->menuKalkulator);
             this->panel4->Location = System::Drawing::Point(3, 3);
             this->panel4->Name = L"panel4";
             this->panel4->Size = System::Drawing::Size(282, 89);
             this->panel4->TabIndex = 33;
             // 
-            // button2
+            // menuKalkulator
             // 
-            this->button2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->button2->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(101)),
+            this->menuKalkulator->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+            this->menuKalkulator->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(101)),
                 static_cast<System::Int32>(static_cast<System::Byte>(0)));
-            this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-            this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->menuKalkulator->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+            this->menuKalkulator->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->button2->ForeColor = System::Drawing::Color::White;
-            this->button2->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-            this->button2->Location = System::Drawing::Point(0, 1);
-            this->button2->MaximumSize = System::Drawing::Size(343, 89);
-            this->button2->Name = L"button2";
-            this->button2->Padding = System::Windows::Forms::Padding(10, 0, 0, 0);
-            this->button2->Size = System::Drawing::Size(282, 89);
-            this->button2->TabIndex = 30;
-            this->button2->Text = L"Kalkulator";
-            this->button2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-            this->button2->UseVisualStyleBackColor = false;
+            this->menuKalkulator->ForeColor = System::Drawing::Color::White;
+            this->menuKalkulator->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
+            this->menuKalkulator->Location = System::Drawing::Point(0, 1);
+            this->menuKalkulator->MaximumSize = System::Drawing::Size(343, 89);
+            this->menuKalkulator->Name = L"menuKalkulator";
+            this->menuKalkulator->Padding = System::Windows::Forms::Padding(10, 0, 0, 0);
+            this->menuKalkulator->Size = System::Drawing::Size(282, 89);
+            this->menuKalkulator->TabIndex = 30;
+            this->menuKalkulator->Text = L"Kalkulator";
+            this->menuKalkulator->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+            this->menuKalkulator->UseVisualStyleBackColor = false;
             // 
             // panel3
             // 
             this->panel3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->panel3->Controls->Add(this->button1);
+            this->panel3->Controls->Add(this->menuKonversi);
             this->panel3->Location = System::Drawing::Point(3, 98);
             this->panel3->Name = L"panel3";
             this->panel3->Size = System::Drawing::Size(282, 89);
             this->panel3->TabIndex = 32;
             // 
-            // button1
+            // menuKonversi
             // 
-            this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
-            this->button1->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(101)),
+            this->menuKonversi->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Left | System::Windows::Forms::AnchorStyles::Right));
+            this->menuKonversi->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(255)), static_cast<System::Int32>(static_cast<System::Byte>(101)),
                 static_cast<System::Int32>(static_cast<System::Byte>(0)));
-            this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-            this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+            this->menuKonversi->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+            this->menuKonversi->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 11, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
-            this->button1->ForeColor = System::Drawing::Color::White;
-            this->button1->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
-            this->button1->Location = System::Drawing::Point(0, 3);
-            this->button1->MaximumSize = System::Drawing::Size(343, 89);
-            this->button1->Name = L"button1";
-            this->button1->Padding = System::Windows::Forms::Padding(10, 0, 0, 0);
-            this->button1->Size = System::Drawing::Size(282, 89);
-            this->button1->TabIndex = 30;
-            this->button1->Text = L"Konversi panjang";
-            this->button1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-            this->button1->UseVisualStyleBackColor = false;
+            this->menuKonversi->ForeColor = System::Drawing::Color::White;
+            this->menuKonversi->ImageAlign = System::Drawing::ContentAlignment::MiddleLeft;
+            this->menuKonversi->Location = System::Drawing::Point(0, 3);
+            this->menuKonversi->MaximumSize = System::Drawing::Size(343, 89);
+            this->menuKonversi->Name = L"menuKonversi";
+            this->menuKonversi->Padding = System::Windows::Forms::Padding(10, 0, 0, 0);
+            this->menuKonversi->Size = System::Drawing::Size(282, 89);
+            this->menuKonversi->TabIndex = 30;
+            this->menuKonversi->Text = L"Konversi panjang";
+            this->menuKonversi->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+            this->menuKonversi->UseVisualStyleBackColor = false;
+            this->menuKonversi->Click += gcnew System::EventHandler(this, &Main::menuKonversi_Click);
             // 
             // panel1
             // 
@@ -1338,7 +1341,7 @@ private: System::Void clearButton_Click(System::Object^ sender, System::EventArg
     operation = "";
 }
 
-       bool menuExpand = false;
+ bool menuExpand = false;
 
 private: System::Void MenuTransition_Tick_1(System::Object^ sender, System::EventArgs^ e) {
     if (menuExpand == false) {
@@ -1364,5 +1367,6 @@ private: System::Void MenuTransition_Tick_1(System::Object^ sender, System::Even
         void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
             this->pictureBox1->Image = System::Drawing::Image::FromFile("image.png");
         }
+    private: System::Void menuKonversi_Click(System::Object^ sender, System::EventArgs^ e);
 };
 }
